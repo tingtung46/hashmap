@@ -26,8 +26,7 @@ export default class HashMap {
     //Re-hashed key
     oldTable.forEach((bucket) => {
       if (bucket.length !== 0) {
-        let cur = bucket;
-        this.set(cur.key, cur.value);
+        this.set(bucket.key, bucket.value);
       }
     });
   }
